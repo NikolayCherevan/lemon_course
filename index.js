@@ -106,28 +106,28 @@ console.log(addToArray)
 
 
 const someBul = confirm();
+
+
+// function someFunct(param = true) { ------->>>> значение по умолчанию 
 function someFunct(param) {
-    if (param) {
-        console.log("yes")
-    } else {
-        console.log("no")
+    if (param === true) {
+        return "yes"
     }
+    return 'no'
 }
-someFunct(someBul)
+console.log(someFunct(someBul))
 
 
 
-let functTernary = param => param ? 'ternary yes' : 'ternary no'
+let functTernary = param => param === true ? 'ternary yes' : 'ternary no'
 console.log(functTernary(someBul))
 
 
 
 
 let funcExp = param => {
-    if (param)
-        console.log('yeah boy')
-    else {
-        console.log("god no please")
-    }
+    if (param === true)
+        return 'yeah boy'
+    return "god no please"
 }
-funcExp(someBul)
+console.log(funcExp(someBul))
