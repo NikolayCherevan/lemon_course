@@ -117,13 +117,13 @@ someFunct(someBul)
 
 
 
-let functTernary = (param) => param ? 'ternary yes' : 'ternary no'
+let functTernary = param => param ? 'ternary yes' : 'ternary no'
 console.log(functTernary(someBul))
 
 
 
 
-let funcExp = (param) => {
+let funcExp = param => {
     if (param)
         console.log('yeah boy')
     else {
