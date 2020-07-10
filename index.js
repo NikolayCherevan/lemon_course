@@ -117,8 +117,8 @@ someFunct(someBul)
 
 
 
-let functTernary = (param) => param ? console.log('ternary yes') : console.log('ternary no')
-functTernary(someBul)
+let functTernary = (param) => param ? 'ternary yes' : 'ternary no'
+console.log(functTernary(someBul))
 
 
 
