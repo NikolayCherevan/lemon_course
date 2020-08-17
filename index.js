@@ -262,3 +262,17 @@
 
 
 //выносить повторяющиеся операции в отедльную функцию , а не  писать множество раз 
+const express = require('express');
+const {users} = require('./users/users-mock')
+const app = express();
+
+app.use('/users', users)
+
+app.get('/', (request, response) => {
+    response.send('this is homepage')
+})
+
+app.listen(3000, () => {
+    console.log('server starting')
+})
+
